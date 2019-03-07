@@ -1,3 +1,14 @@
+
+  // "dependencies": {
+  //   "babel-preset-stage-2": "^6.24.1",
+  //   "cheet.js": "0.3.3",
+  //   "react": "15.4.2",
+  //   "react-addons-css-transition-group": "15.4.2",
+  //   "react-dom": "15.4.2",
+  //   "react-redux": "5.0.3",
+  //   "redux": "3.6.0"
+  // },
+
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -15,9 +26,8 @@ module.exports = (env) => {
     }
 
     return {
-
         entry: {
-            invie: path.resolve(__dirname, 'src/index.js'),
+            "platzi-video": path.resolve(__dirname, 'index.js'),
         },
         output: {
             path: path.resolve(__dirname, 'dist'),
